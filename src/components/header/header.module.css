@@ -36,3 +36,30 @@
     transition: background-color 0.3s ease;
 }
 
+.menu {
+    cursor: pointer;
+    color: #343a40;
+    font-size: 24px;
+    display: none; 
+}
+
+
+@media (max-width : 900px) {
+    .logo{
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    .navBarWrapper {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        background-color: #f8f9fa;
+        z-index: 50;
+        transition: all .5s ease-in;
+        background-color: rgb(227, 225, 225);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }   
+}

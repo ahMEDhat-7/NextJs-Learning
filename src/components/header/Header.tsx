@@ -1,10 +1,12 @@
-import { Brush } from 'lucide-react'
+"use client";
+import { Brush, Menu, X } from 'lucide-react'
 import styles from './header.module.css'
 import Link from 'next/link'
-import React from 'react'
+import { useState } from 'react'
 import NavBar from '../navbar/NavBar'
 
 const Header = () => {
+    const [toggle,setToggle] = useState<boolean>(false);
     return (
         <header className={styles.header}>
             <div>
@@ -14,7 +16,13 @@ const Header = () => {
                     dev
                 </Link>
             </div>
-            <NavBar />
+            <div className={styles.menu} >
+                {toggle ?  <X onClick={()=> setToggle(prev =>!prev)}/> : <Menu onClick={()=> setToggle(prev =>!prev)}/>}
+            </div>
+            <div className={styles.navBarWrapper} 
+                style={{ clipPath: toggle ? "polygon(0 0, 100% 0, 100% 100%, 0 100%)" : "" }}>
+                <NavBar setToggle={setToggle}/>
+            </div>
             <div className={styles.right}>
                 <Link href={"/login"} className={styles.btn}>Login</Link>
                 <Link href={"/register"} className={styles.btn}>Register</Link>
