@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistMono.variable}`}>
         <Header />
-        <main className='text-center mt-[40%] font-bold text-2xl'>
+        <main className='text-center mt-5 font-bold text-2xl'>
           {children}
         </main>
       </body>
