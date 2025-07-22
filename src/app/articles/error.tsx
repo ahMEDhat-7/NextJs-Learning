@@ -1,14 +1,13 @@
 "use client";
-import { ErrorProps } from "@/utils/errors";
 import Link from "next/link";
+import { ErrorProps } from "@/utils/errors";
 
-
-
-const error = ({error,reset}:ErrorProps) => {
+const ArticleError = ({error,reset}:ErrorProps) => {
   return (
+    
     <div className="pt-7 items-center">
-        <h1>Global Error Page For All App</h1>
         <div className="text-3xl font-semibold text-red-600">
+        <h1>Custom Article Error Page</h1>
             Something went wrong.
         </div>
         <h2>Error Message: {error.message}</h2>
@@ -22,4 +21,4 @@ const error = ({error,reset}:ErrorProps) => {
   )
 }
 
-export default error
+export default ArticleError
