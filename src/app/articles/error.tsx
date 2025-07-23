@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { ErrorProps } from "@/utils/errors";
+import { ErrorProps } from "@/utils/interfaces";
 
 const ArticleError = ({error,reset}:ErrorProps) => {
   return (

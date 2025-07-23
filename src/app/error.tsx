@@ -1,5 +1,5 @@
 "use client";
-import { ErrorProps } from "@/utils/errors";
+import { ErrorProps } from "@/utils/interfaces";
 import Link from "next/link";
 
 

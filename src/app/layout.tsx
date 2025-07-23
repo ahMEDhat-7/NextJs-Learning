@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistMono.variable}`}>
         <Header />
-        <main className='page-height text-center mt-5 font-bold text-2xl'>
+        <main className='page-height text-2xl'>
           {children}
         </main>
         <Footer />

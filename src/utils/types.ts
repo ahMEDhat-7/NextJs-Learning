@@ -4,3 +4,4 @@ export type ArticleType = {
   title: string;
   body: string;
 }
+
