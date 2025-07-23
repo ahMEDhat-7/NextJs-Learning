@@ -1,3 +1,7 @@
+# Next.js Learning Journey
+
+Welcome! This repository documents my personal journey to learn the Next.js framework. Here, I practice and complete day-by-day exercises to deepen my understanding of Next.js, experiment with its features, and build hands-on projects. My goal is to improve my skills through consistent practice and exploration.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
