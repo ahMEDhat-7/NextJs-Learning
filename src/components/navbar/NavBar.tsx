@@ -6,19 +6,19 @@ type NavBarProps = {
 
 const NavBar = ({ setToggle }: NavBarProps) => {
     return (
-        <nav className={styles.navBar} role='navigation'>
+        <nav className={styles.navBar} role="navigation">
             <ul className={styles.navLinks}>
                 <li>
-                    <Link onClick={()=> setToggle(prev =>!prev)} href="/" className={styles.navLink}>Home</Link>
+                    <Link href="/" className={styles.navLink} onClick={() => setToggle(prev => !prev)}>Home</Link>
                 </li>
                 <li>
-                    <Link onClick={()=> setToggle(prev =>!prev)} href="/about" className={styles.navLink}>About</Link>
+                    <Link href="/about" className={styles.navLink} onClick={() => setToggle(prev => !prev)}>About</Link>
                 </li>
                 <li>
-                    <Link onClick={()=> setToggle(prev =>!prev)} href="/articles" className={styles.navLink}>Articles</Link>
+                    <Link href="/articles" className={styles.navLink} onClick={() => setToggle(prev => !prev)}>Articles</Link>
                 </li>
                 <li>
-                    <Link onClick={()=> setToggle(prev =>!prev)} href="/admin" className={styles.navLink}>Admin-Panel</Link>
+                    <Link href="/admin" className={styles.navLink} onClick={() => setToggle(prev => !prev)}>Admin Panel</Link>
                 </li>
             </ul>
         </nav>

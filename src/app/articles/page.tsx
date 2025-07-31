@@ -3,7 +3,13 @@ import { ArticleType } from "@/utils/types";
 
 
 const getArticles = async () :Promise<ArticleType[]> => {
-  const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+  
+  await new Promise((resolve)=>setTimeout(resolve,10000));
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts',
+    {
+      cache:"no-store"
+    }
+  );
   if (!res.ok) {
     throw new Error('Failed to fetch posts');
   }
