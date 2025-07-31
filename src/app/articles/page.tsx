@@ -1,10 +1,11 @@
 import ArticleItem from "@/components/articles/ArticleItem";
+import Pagination from "@/components/articles/Pagination";
 import { ArticleType } from "@/utils/types";
 
 
 const getArticles = async () :Promise<ArticleType[]> => {
   
-  await new Promise((resolve)=>setTimeout(resolve,10000));
+  await new Promise((resolve)=>setTimeout(resolve,2000));
   const res = await fetch('https://jsonplaceholder.typicode.com/posts',
     {
       cache:"no-store"
@@ -25,6 +26,7 @@ const Articles = async () => {
             <ArticleItem key={article.id} article={article} />
         ))}
         </div>
+        <Pagination />
       
     </section>
   )
