@@ -1,4 +1,3 @@
-import ArticleItem from "@/components/articles/ArticleItem";
 import { getRandomNumber } from "@/lib/helpers";
 import { PageProps } from "@/utils/interfaces";
 import { ArticleType } from "@/utils/types";

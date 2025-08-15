@@ -27,9 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistMono.variable}`}>
+      <body className={`${geistMono.variable} `}>
         <Header />
-        <main className='page-height'>
+        <main className='page-height bg-gradient-to-br from-blue-500 to-orange-500'>
           {children}
         </main>
         <Footer />

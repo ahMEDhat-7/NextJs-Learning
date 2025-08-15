@@ -8,7 +8,7 @@ import NavBar from '../navbar/NavBar'
 const Header = () => {
     const [toggle,setToggle] = useState<boolean>(false);
     return (
-        <header className={styles.header}>
+        <header className={`${styles.header} bg-gradient-to-l from-purple-500 to-lime-300`}>
             <div>
                 <Link href={"/"} className={styles.logo}>
                     Lumora
