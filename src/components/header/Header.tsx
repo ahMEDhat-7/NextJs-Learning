@@ -24,7 +24,10 @@ const Header = () => {
                 <NavBar setToggle={setToggle}/>
             </div>
             <div className={styles.right}>
-                <Link href={"/login"} className={styles.btn}>Register</Link>
+                <Link href={"/login"} className={styles.btn}>Login</Link>
+            </div>
+             <div className={styles.right}>
+                <Link href={"/register"} className={styles.btn}>Register</Link>
             </div>
         </header>
     )
