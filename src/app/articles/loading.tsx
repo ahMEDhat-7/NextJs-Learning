@@ -3,7 +3,7 @@ const pages = [1, 2, 3, 4, 5, 6];
 function Loading() {
     return (
         <section className='container px-5 m-auto animate-pulse'>
-            <div className='my-5 w-full md:w-2/3 m-auto bg-gray-300 h-15 rounded'></div>
+            <div className='w-full md:w-2/3 m-auto bg-gray-300 h-15 rounded'></div>
             <div className="flex flex-wrap justify-between items-center gap-7">
                 {pages.map((_, indx) => (
                     <div key={indx} className="my-1 p-5 w-full md:w-2/5 lg:w-1/4 rounded-lg shadow-lg ">
